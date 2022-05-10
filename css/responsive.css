@@ -1,0 +1,132 @@
+@charset "utf-8";
+ 
+ /* css document */
+ 
+@media (max-width:1024px)
+{
+	 div.my-pic
+	 {
+		 width:40%;
+		 display:block;
+		 
+	 }
+	 div.about-text
+	 {
+		 width:60%;
+		 padding:0px 40px;
+		 display:block;
+		 
+	 }
+	 div.online-mkt,div.seo
+	 {
+		 display:none;
+	 }
+	 div.about-skills
+	 {
+		 width:30%;
+		 padding:30px 0px;
+	 }
+	 div.skill-bar
+	 {
+		width:50%;
+		padding:30px 0px;
+		 
+	 }
+	 
+	 div.people
+	{
+	  width:40%;
+      margin:20px 5%;	  
+	}
+   div.contact
+   {
+	   background-size:120% 60%;
+   }   
+	div.contacts-icon i{
+		margin-right:50px;
+		margin-top:-5px;
+	}
+	div.contact img
+	{
+		width:60%;
+	}
+	
+
+	
+}
+
+@media (max-width:768px)
+{
+	 div.web-design,div.graphic-design
+	 {
+		 display:none;
+	 }
+	
+	 div.people
+	{
+	  width:90%;
+      	  
+	}
+
+	div.contact img
+	{
+		display:none;
+	}
+	
+	div.contacts-icon i{
+		margin-right:40px;
+		margin-top:25px;
+	}
+	address.number
+	{
+		 float:left;
+		 clear:left;
+		 margin:10px 0px;
+		
+	}
+}
+
+@media (max-width:480px)
+{
+	div.my-pic,div.about-text
+	{
+		width:100%;
+	}
+	div.about-text
+	{
+		padding:20px 30px;
+	}
+	div.web-design,div.graphic-design,div.online-mkt,div.seo
+	{
+		display:block;
+	}
+	div.about-skills
+	{
+		width:100%;
+		margin-left:0%;
+		margin-right:0%;
+		padding:0px 30px;
+	}
+	div.skill-bar
+	{
+		width:100%;
+		margin-left:0%;
+		margin-right:0%;
+		padding:30px 30px;
+	}
+	
+	div.contact
+	{
+		background-image:none;
+	}
+	div.contacts-icon i
+	{
+		margin-left:50px;
+	}
+	div.footer
+	{
+		font-size:15px;
+	}
+	
+	
+}

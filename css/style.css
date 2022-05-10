@@ -1,0 +1,654 @@
+@charset "utf-8";
+
+body
+{
+	padding:0;
+	margin:0;
+}
+*
+{
+	box-sizing:border-box;
+}
+
+/* start loader coding */
+#loader-cont
+{
+	width:100%;
+	height:100%;
+	
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:1;
+}
+#slide-left
+{
+	position:absolute;
+	top:0;
+	left:0;
+	width:50%;
+	height:100%;
+	background-color:#f5f5f5;
+	z-index:1;
+}
+#slide-right
+{
+	width:50%;
+	height:100%;
+	background-color:#f5f5f5;;
+	position:absolute;
+	top:0;
+	right:0;
+	z-index:1;
+}
+	
+.icon
+{
+	position:absolute;
+	top:45%;
+	left:50%;
+	z-index:1;
+}
+
+/* end loader coding */
+
+/* start mobile nav coding */
+
+#menu,.slicknav_menu,.desk-menu
+{
+	display:none;
+}
+
+@media screen and (max-width:992px)
+{
+	.slicknav_menu{
+		display:block;
+	}
+  .big-slider
+  {
+	  top:0;
+	  z-index:-1;
+  }
+
+}
+
+@media screen and (min-width:992px)
+{
+   .desk-menu{
+	   display:block;
+	   z-index:1;
+   }	
+  .big-slider
+  {
+	  top:70px;
+	  z-index:-1;
+	 
+  }
+ 
+  
+    /* start picone label coding */
+    .slider-label
+	{
+		width:100%;
+		height:1080px;
+		float:left;
+		margin-top:-1010px;
+	}
+    
+	.picone-header
+	{
+		margin-top:500px;
+		font-size:50px;
+		color:#0f87ff;
+		font-family:'DO Hyeon',sans-serif;
+		display:none;
+	}
+    .picone-btn
+	{
+		border:none;
+		width:105px;
+		padding:15px;
+		font-weight:bold;
+		margin-top:-20px;
+		background-color:#ff10d3;
+		display:none;
+	}
+	.picone-btn a
+	{
+		color:white;
+	}
+	
+  
+  /* end picone label coding */
+  
+  /* start pictwo label coding */
+    
+	  .pictwo-header
+	  {
+		 color:#fff;
+         font-size:80px;
+         margin-top:450px;
+        font-family:"Jua",sans-serif;	
+        display:none;		
+	  }
+	  .pictwo-para
+	  {
+		  color:yellow;
+		  font-size:50px;
+		  font-family:'DO Hyeon',sans-serif;
+		  margin-top:-50px;
+		  display:none;
+	  }
+	  .pictwo-btn
+	  {
+		  border:none;
+		  background-color:red;
+		  padding:15px;
+		  -webkit-box-shadow:0px 0xp 10px white;
+		  -moz-box-shadow:0px 0px 10px white;
+		   box-shadow:0px 0px 10px white;
+		  display:none;
+	  }
+	  .pictwo-btn a
+	  {
+		 font-family:"Jua",sans-serif;
+         font-size:15px;
+         color:white;		 
+	  }
+	  
+  
+  
+  
+  /* end pictwo label coding */
+
+}
+
+@media screen and (max-width:321px)
+{
+	/* start picone label coding */
+    .slider-label
+	{
+		width:100%;
+		height:180px;
+		float:left;
+		margin-top:-180px;
+		background-color:rgba(0,0,0,0.8);
+		
+	}
+    
+	.picone-header
+	{
+		margin-top:30px;
+		font-size:30px;
+		color:#0f87ff;
+		font-family:'DO Hyeon',sans-serif;
+		display:none;
+	}
+    .picone-btn
+	{
+		border:none;
+		width:105px;
+		padding:15px;
+		font-weight:bold;
+		margin-top:-20px;
+		background-color:#ff10d3;
+		display:none;
+	}
+	.picone-btn a
+	{
+		color:white;
+	}
+	
+  
+  /* end picone label coding */
+  
+  /* start pictwo label coding */
+    
+	  .pictwo-header
+	  {
+		 color:#fff;
+       
+         font-size:35px;
+         margin-top:30px;
+        font-family:"Jua",sans-serif;	
+        display:none;		
+	  }
+	  .pictwo-para
+	  {
+		  color:yellow;
+		  font-size:20px;
+		  font-family:'DO Hyeon',sans-serif;
+		  margin-top:-25px;
+		  display:none;
+	  }
+	  .pictwo-btn
+	  {
+		  border:none;
+		  background-color:red;
+		
+		  -webkit-box-shadow:0px 0xp 10px white;
+		  -moz-box-shadow:0px 0px 10px white;
+		   box-shadow:0px 0px 10px white;
+		  display:none;
+	  }
+	  .pictwo-btn a
+	  {
+		 font-family:"Jua",sans-serif;
+         font-size:15px;
+         color:white;		 
+	  }
+	  
+  
+  
+  
+  /* end pictwo label coding */
+	
+	
+}
+
+/* end mobile nav coding */
+
+
+/* start desktop nav coding */
+
+  .desk-menu
+  {
+	 padding:15px;
+	  margin:0;
+	  list-style:none;
+	  width:100%;
+	  height:70px;
+	  box-shadow:0px 5px 8px 0px rgba(0,0,0,0.2);
+	  background-color:#fff;
+	  position:fixed;
+	  top:0;
+	  left:0;
+	  
+	  
+	  
+  }
+  a
+  {
+	  text-decoration:none;
+  }
+  .brand-name
+  {
+	  float:left;
+  }
+   .brand-name li a
+   {
+	  color:#FF0E0F;
+	  font-family: 'DO Hyeon',sans-serif;
+      font-weight:bold;
+	  font-size:28px;
+   }
+   
+   .top-right-nav{
+	   float:right;
+   }
+   .top-right-nav li 
+   {
+	   display:inline-block;
+	   padding:10px;
+	   margin:0px 12px;
+   }
+   
+   .top-right-nav li a 
+   {
+	   color: #323232;
+    font-family: 'Jua',sans-serif;
+   }
+   
+   .top-right-nav li:hover
+   {
+	   background-color:#FF0E0F;
+	   transition:1s;
+   }
+   .top-right-nav li:hover a
+   {
+	   color:#fff;
+   }
+/* end desktop nav coding */
+
+/* start project slider */
+  
+    .project-header
+	{
+		text-align:center;
+		font-size:50px;
+		color:#323232;
+		font-family:'Jua',sans-serif;
+		margin-top:130px;
+	}
+	.slider
+	{
+		width:80%;
+		margin:45px auto;
+	}
+	.slick-slide
+	{
+		margin:0px 40px;
+	}
+	.slick-slide
+	{
+		transition:all ease-in-out .3s;
+		opacity:.2;
+	}
+	.slick-slide img
+	{
+		width:100%;
+	}	
+   
+	.slick-prev:before,.slick-next:before
+	{
+	  color:red;
+	  font-size:40px;
+    }
+	.slick-prev{
+		margin-left:-30px;
+		margin-top:-10px;
+	}
+     .slick-next
+	 {
+		margin-right:-10px;
+		margin-top:-10px; 
+	 }
+
+.slick-active{
+	opacity:.6;
+}
+
+.slick-current{
+	opacity:1;
+}
+
+
+/* end project slider */
+
+
+/* start about me */
+   .about-me
+   {
+	   float:left;
+	   width:100%;
+	   background-color:#ffffff;
+	   margin:50px 0px;
+	   
+   }
+   .my-pic
+   {
+	   width:30%;
+	   float:left;
+	   display:none;
+	   
+   }
+   .about-text
+   {
+	   width:70%;
+	   float:left;
+	   padding:20px 80px;
+	   margin:0;
+	   display:none;
+   }
+   .aboutme-header,.web-design h2
+   {
+	   font-family:"Nunito",sans-serif;
+	   color:#323232;
+	   margin-top:0;
+	   margin-bottom:0;
+   }
+  .web-design
+   {
+	   float:left;
+	   margin-right:60px;
+	   margin-bottom:20px;
+   }
+   
+   .aboutme-para
+   {
+	   color:#323232;
+	   font-family:sans-serif;
+	   margin-top:4px;
+	   text-align:justify;  
+	   line-height:20px;
+	   
+   }
+   .web-design p,.graphic-design p,.seo p,.online-mkt p
+   {
+	   color:#323232;
+	   font-family:sans-serif;
+	   margin-top:1px;
+	   text-align:justify;
+	   
+   }
+   .web-design h2,.graphic-design h2,.seo h2,.online-mkt h2
+   {
+	   font-size:19px;
+   }
+   
+   .about-skills
+   {
+	   width:40%;
+	   float:left;
+	   clear:left;
+	   
+	   margin-left:5%;
+	   margin-right:5%;
+	   padding:30px 50px;
+   }
+   .about-skills button
+   {
+	 
+	   padding:15px;
+	   border:1px solid #ccc;
+	   background-color:#00ff2a;
+	   margin:10px 0px;
+   }
+   .about-skills button a
+   {
+	   color:white;
+	   font-weight:bold;
+   }
+   
+   .skill-bar
+   {
+	   width:40%;
+	   
+	   float:left;
+	   margin-left:5%;
+	   margin-right:5%;
+	   padding:30px 50px;
+   }
+   
+   .skill-bar h2
+   {
+	   padding:0;
+	   margin:0;
+	   font-family:sans-serif;
+	   color:#323232;
+	   font-size:20px;
+	   font-weight: normal;
+	   
+   }
+   .progress-bar
+   {
+	  width:100%;
+	  height:27px;
+	  background-color:#d3d3d3;
+	  float:left;
+	  margin-top:2px;
+	  margin-bottom:20px;
+	   
+   }
+   
+   .progress-one,.progress-two,.progress-seven,.progress-three,.progress-four,.progress-five,.progress-six
+   {
+	  width:0%;
+	  text-align:center;
+      font-family:Sans-serif;
+      font-size:15px;
+      padding:4px;
+      color:black;
+     	  
+    	  
+   }
+   
+   .progress-seven,.progress-one,.progress-two,.progress-three,.progress-four,.progress-five,.progress-six
+   {
+	   border:1px solid #fbdb2a;
+	   background-color:#fbdb2a;
+	  
+   }
+   
+  
+   
+/* end about me */ 
+
+
+/* start people says */
+    .people-says h1
+	{
+		font-family:"Nunito",sans-serif;
+		text-align:center;
+		font-size:30px;
+	}
+	.people
+	{
+		width:30%;
+		border:1px solid #ccc;
+		float:left;
+		margin:20px 22px;
+		padding:30px 20px;
+		
+	}
+	.people img
+	{
+		float:left;
+		border-radius:50%;
+		box-shadow:0px 0px 5px grey;
+		
+	}
+	.people-name
+	{
+		float:left;
+		padding:10px 20px;
+	}
+	
+	.people-name h2
+	{
+		float:left;
+		font-family:"Do Hyeon",sans-serif;
+		margin:0;
+		font-size:30px;
+	}
+	.people-name small
+	{
+		float:left;
+		clear:left;
+		font-family:sans-serif;
+	}
+	.people p
+	{
+		float:left;
+		font-family:"Nunito",sans-serif;
+		color:#323232;
+		text-align:justify;
+		
+	}
+
+
+/* end people says */
+
+
+/* start contact me */
+   .contact
+   {
+	   width:100%;
+	   float:left;
+	   background-image:url("../images/contatc-bg.jpg");
+       background-size:120% 80%;
+	   background-repeat:no-repeat;
+	   background-position:bottom right;
+	   padding:35px 20px;
+	   background-color: #1E8EFF;
+	   margin-top:60px;
+   }
+   .contact h1
+   {
+	   font-family:"Nunito",sans-serif;
+	   color:white;
+	   font-size:40px;
+	   margin:0 3%;
+   }
+   .contact img
+   {
+	   float:left;
+	   clear:left;
+	   margin-top:-20px;
+	   margin-left:3%;
+	   transform:rotateX(150deg);
+   }
+    
+.contacts-icon i
+{
+	float:left;
+	color:white;
+	border:2px solid white;
+	font-size:50px;
+	width:100px;
+    height:100px;
+	text-align:center;
+	padding:20px 0px;
+	margin-top:-13px;
+	margin-right:167px;
+	cursor:pointer;
+	
+	
+	
+}	
+.contacts-icon i:first-child{
+	clear:left;
+}
+
+   
+
+/* end contact me */
+
+
+.footer
+{
+	float:left;
+	width:100%;
+	height:40px;
+	background-color:white;
+	padding:9px;
+	font-weight:bold;
+	color:#323232;
+	font-size:18px;
+}
+.email
+{
+	float:left;
+}
+.number
+{
+	float:right;
+}
+
+.scrolltop
+{
+	position:fixed;
+	bottom:40px;
+    right:20px;
+	width:50px;
+	height:50px;
+	color:black;
+	background-color:white;
+	border-radius:50%;
+	box-shadow:0px 0px 5px grey;
+	text-align:center;
+	font-size:30px;
+	padding:7px;
+	display:none;
+   
+}
